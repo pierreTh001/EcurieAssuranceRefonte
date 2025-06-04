@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "../../../../components/ui/button";
 import './../../../../styles/mobiles.scss';
+import './ImageSliderSection.scss';
 
 const slides = [
   {
@@ -74,7 +75,7 @@ export const ImageSliderSection = (): JSX.Element => {
       />
 
       {/* Texte principal */}
-      <div className="absolute top-20 md:top-[180px] left-8 md:left-[132px] z-10 w-[90%] md:w-[700px] text-white">
+      <div className="absolute top-20 md:top-[180px] left-8 md:left-[132px] z-10 w-[90%] md:w-[700px] text-white SliderInfo">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight md:leading-[64px] font-['Playfair_Display']">
           {slide.title}
         </h1>
@@ -93,7 +94,7 @@ export const ImageSliderSection = (): JSX.Element => {
       </div>
 
       {/* Navigation */}
-      <div className="absolute bottom-20 md:bottom-[120px] right-8 md:right-[132px] z-10 flex items-center gap-4">
+      <div className="absolute bottom-20 md:bottom-[120px] right-8 md:right-[132px] z-10 flex items-center gap-4 buttonSection">
         <button
           onClick={prevSlide}
           className="w-[82px] h-[45px] bg-white rounded-full flex items-center justify-center align-center"

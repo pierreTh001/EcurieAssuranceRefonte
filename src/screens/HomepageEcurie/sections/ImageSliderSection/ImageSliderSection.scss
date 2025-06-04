@@ -1,1 +1,18 @@
 
+.buttonSection{
+    bottom: 16em;
+}
+
+    .SliderInfo{
+        top: 12em;
+    }
+
+@media screen and (max-width: 768px) {
+    .buttonSection{
+        bottom: 2em;
+    }
+
+    .SliderInfo{
+        top: 8em;
+    }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import './MainSection.css';
 
 // Define the feature data for mapping
 const features = [
@@ -22,7 +23,7 @@ const features = [
 
 export const MainSection = (): JSX.Element => {
   return (
-    <section className="w-full py-16 px-4 md:px-8 lg:px-0 max-w-7xl mx-auto">
+    <section className="w-full py-16 px-4 md:px-8 lg:px-0 max-w-7xl mx-auto DecouvrezSection">
       <div className="flex flex-col space-y-12">
         {/* Header with CTA */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
