@@ -11,3 +11,19 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+    .bandeauLien {
+        top: 0;
+        padding: 2rem 0;
+    }
+
+    .bandeauBack {
+        top: 40px;
+    }
+
+    .bandeauFront {
+        top: 0;
+        gap: 1rem;
+    }
+}
