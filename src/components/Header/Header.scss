@@ -1,0 +1,25 @@
+@import './../../styles/variables';
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #2ef3c5; // vert au survol
+  }
+
+  &.active {
+    color: #2ef3c5;
+    font-weight: 600;
+    border-bottom: 2px solid #2ef3c5;
+  }
+}
+
+.headerNav{
+    padding-top: 4em;
+}
+
+.mobileMenu{
+    background-color: $color-secondary;
+}

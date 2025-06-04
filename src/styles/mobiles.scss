@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px) {
+  .colonneMobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .centreMobile {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cacheMobile {
+    visibility: hidden !important;
+  }
+
+  .pleinEcranMobile {
+    width: 100%;
+    height: 100%;
+  }
+
+  .marginTopMobile {
+    margin-top: 2rem;
+  }
+
+  .leftMobile{
+    left:2em;
+  }
+
+  .titleMobile{
+    font-size: 45px;
+  }
+
+  .containerMobile{
+    max-width: 80%;
+  }
+
+  // Ajoute ici tes autres classes responsive
+}

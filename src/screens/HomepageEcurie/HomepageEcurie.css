@@ -1,0 +1,54 @@
+.mainBlock{
+    background-color: #40DEB9;
+}
+
+.mainContentBlock{
+    max-width: 80%;
+}
+
+.imageRadius{
+    border-radius: 20px;
+}
+
+.txtSecond{
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.headerSection{
+    display: flex;
+    align-items: flex-end;
+    width: 90vw;
+    justify-content: space-between;
+}
+
+.headerMain{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    left: 0;
+}
+
+.link{
+    cursor: pointer;
+}
+
+.link:hover{
+    color : rgb(46 243 197 / 0.9);
+}
+
+.btnGreen{
+    border-color: rgb(46 243 197 / 0.9);
+}
+
+.btnNav{
+    z-index: 11;   
+}
+
+.bottom15{
+    bottom: 16em;
+}
+
+.colorWhite{
+    color: white;
+}

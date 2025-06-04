@@ -1,0 +1,13 @@
+.bandeauLien{
+    padding: 0;
+    top: -2em;
+}
+
+.bandeauBack{
+    top: 28px;
+}
+
+.bandeauFront{
+    display: flex;
+    justify-content: center;
+}
