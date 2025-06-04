@@ -8,13 +8,18 @@
 }
 
 .bandeauFront{
+
+}
+
+.beandeauParent{
     display: flex;
     justify-content: center;
+    align-items: baseline;
 }
 
 @media screen and (max-width: 768px) {
     .bandeauLien {
-        top: 0;
+        top: -5em;
         padding: 2rem 0;
     }
 
@@ -25,5 +30,9 @@
     .bandeauFront {
         top: 0;
         gap: 1rem;
+    }
+
+    .beandeauParent{
+        align-items: center;
     }
 }
