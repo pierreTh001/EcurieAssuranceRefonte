@@ -57,7 +57,7 @@ export const MainContentSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="py-16 px-20">
+    <section className="py-16 px-4 sm:px-8 md:px-20">
       <div className="flex justify-between items-end mb-12">
         <div className="flex flex-col gap-2.5">
           <p className="font-app-secondary text-[#243d38] text-base tracking-wide leading-tight">
@@ -89,8 +89,13 @@ export const MainContentSection = (): JSX.Element => {
         </div>
         <CarouselContent className="-ml-4">
           {productOfferings.map((offering) => (
-            <CarouselItem key={offering.id} className="pl-4 md:basis-1/4">
-              <Card className="w-[327px] h-[452px] rounded-[20px] overflow-hidden border-none">
+            <CarouselItem
+              key={offering.id}
+              className="pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+            >
+              <Card
+                className="w-full sm:w-[280px] md:w-[327px] h-[380px] md:h-[452px] rounded-[20px] overflow-hidden border-none"
+              >
                 <CardContent className="p-0 h-full relative">
                   <div
                     className="absolute inset-0 bg-cover bg-center"
@@ -98,10 +103,10 @@ export const MainContentSection = (): JSX.Element => {
                   />
                   <div className="absolute inset-0 rounded-[20px] bg-gradient-to-b from-transparent via-transparent to-[#112f38]" />
                   <div className="absolute bottom-10 left-0 right-0 flex flex-col items-center gap-4 px-4">
-                    <h3 className="font-playfair font-medium text-white text-[37px] text-center whitespace-pre-line">
+                    <h3 className="font-playfair font-medium text-white text-2xl md:text-[37px] text-center whitespace-pre-line">
                       {offering.title}
                     </h3>
-                    <p className="font-inter font-normal text-white text-sm text-center">
+                    <p className="font-inter font-normal text-white text-xs sm:text-sm text-center">
                       {offering.description}
                     </p>
                   </div>
