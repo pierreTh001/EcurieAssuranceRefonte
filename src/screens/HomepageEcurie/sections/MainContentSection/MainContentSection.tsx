@@ -91,10 +91,10 @@ export const MainContentSection = (): JSX.Element => {
           {productOfferings.map((offering) => (
             <CarouselItem
               key={offering.id}
-              className="pl-4 basis-full sm:basis-1/2 lg:basis-1/4"
+              className="pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
             >
               <Card
-                className="w-full h-[380px] md:h-[452px] rounded-[20px] overflow-hidden border-none"
+                className="w-full sm:w-[280px] md:w-[327px] h-[380px] md:h-[452px] rounded-[20px] overflow-hidden border-none"
               >
                 <CardContent className="p-0 h-full relative">
                   <div
