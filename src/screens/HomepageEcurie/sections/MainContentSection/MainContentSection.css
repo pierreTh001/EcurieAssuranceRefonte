@@ -3,3 +3,10 @@
     justify-content: end;
     margin-top: -4em;
 }
+
+@media screen and (max-width: 768px) {
+    .buttonSliderOffre{
+        margin-top: 0;
+        justify-content: center;
+    }
+}
