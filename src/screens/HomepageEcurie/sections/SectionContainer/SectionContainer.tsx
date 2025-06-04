@@ -72,15 +72,14 @@ export const SectionContainer = (): JSX.Element => {
         </div>
 
         {/* Cards container */}
-        <div className="container max-w-[1242px] mx-auto containerImg ">
-          <div className="flex flex-wrap gap-[45px_36px] grid colonneMobile">
+        <div className="container max-w-[1242px] mx-auto containerImg">
+          <div className="grid gap-[45px_36px] md:grid-cols-3">
             {categories.map((category) => (
               <Card
                 key={category.id}
                 className={`relative overflow-hidden rounded-none border-none shadow-none
                   w-full
-                  ${category.isWide ? "md:w-[816px] large" : "md:w-[390px]"}
-                  ${category.isSmallClass ? "small" : ""}
+                  ${category.isWide ? "md:col-span-2" : ""}
                   h-[404px]`}
                 style={{
                   backgroundImage: `url(${category.imageUrl})`,
