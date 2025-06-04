@@ -23,7 +23,7 @@ export const Header = (): JSX.Element => {
   return (
     <header
       className={`w-full top-0 z-50 transition-all duration-300 px-6 md:px-20 py-4 flex items-center justify-between headerNav ${
-        isHome ? "bg-transparent absolute" : "bg-[#2ef3c5] fixed"
+        isHome ? "bg-transparent absolute" : "bg-[#233D38] fixed variantHeader"
       }`}
     >
       {/* Logo */}

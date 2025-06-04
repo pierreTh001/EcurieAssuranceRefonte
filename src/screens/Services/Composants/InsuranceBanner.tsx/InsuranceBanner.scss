@@ -1,0 +1,41 @@
+.insurance-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: #f7f8f9;
+
+  &__left {
+    flex: 1;
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #1f3d37; // Couleur sombre type vert foncé
+      line-height: 1.2;
+    }
+  }
+
+  &__right {
+    flex: 1.2;
+    padding-left: 40px;
+    p {
+      font-size: 1rem;
+      color: #5c6470; // Couleur gris foncé
+      line-height: 1.6;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 40px 20px;
+
+    &__left,
+    &__right {
+      padding: 0;
+    }
+
+    &__right {
+      margin-top: 20px;
+    }
+  }
+}

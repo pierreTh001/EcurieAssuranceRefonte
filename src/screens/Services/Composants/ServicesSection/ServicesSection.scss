@@ -1,0 +1,140 @@
+.services-section {
+  padding: 60px 80px;
+  background-color: #f8f8f8;
+
+  &__search {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 40px;
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    &__filters,
+    .services-section__filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      button {
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        background: white;
+        cursor: pointer;
+        font-size: 0.9rem;
+
+        &.active {
+          background: #00e4be;
+          color: white;
+          border-color: #00e4be;
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 40px 0 20px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+}
+
+.iconCardService{
+ background-color: color(srgb 0.0125 0.8942 0.7456);
+/* width: fit-content; */
+/* height: fit-content; */
+height: 1.5em;
+width: 1.5em;
+border-radius: 10px;
+text-align: center;
+}
+
+.service-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    background-color: #00e4be;
+    color: #1f3d37;
+    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 16px 0 8px;
+    color: #1f3d37;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #5c6470;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px 16px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: auto; // pousse le bouton en bas
+
+    li {
+      font-size: 0.9rem;
+      color: #333;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: "✔";
+        margin-right: 6px;
+        color: gray;
+      }
+    }
+  }
+
+  button {
+    margin-top: 24px;
+    padding: 14px 24px;
+    background-color: #00e4be;
+    color: #1f3d37;
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: normal;
+
+    &:hover {
+      background-color: #00cba7;
+    }
+  }
+}
