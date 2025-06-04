@@ -11,7 +11,7 @@
   }
 
   .cacheMobile {
-    visibility: hidden !important;
+    display: none !important;
   }
 
   .pleinEcranMobile {
@@ -32,7 +32,29 @@
   }
 
   .containerMobile{
-    max-width: 80%;
+    max-width: 90%;
+  }
+
+  .bottom15{
+    bottom: 6em;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .grid .small,
+  .grid .large,
+  .grid .item:nth-child(3),
+  .grid .item:nth-child(4),
+  .grid .item:nth-child(5) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .headerNav{
+    padding-top: 2em;
   }
 
   // Ajoute ici tes autres classes responsive
