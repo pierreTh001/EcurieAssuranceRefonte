@@ -7,6 +7,8 @@ import { navLinks } from "../../constants/navigation";
 import { NavLinks } from "./components/NavLinks";
 import logo from "../../../public/img/logo_transparent.png";
 
+import './Header.scss';
+
 
 export const Header = (): JSX.Element => {
   const [mobileOpen, setMobileOpen] = useState(false);
