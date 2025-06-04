@@ -59,7 +59,7 @@ export const ImageSliderSection = (): JSX.Element => {
   };
 
   return (
-    <section className="relative w-full h-[900px] overflow-hidden">
+    <section className="relative w-full h-[600px] md:h-[900px] overflow-hidden">
       {/* Image dynamique */}
       <div
         key={slide.id}
@@ -74,8 +74,8 @@ export const ImageSliderSection = (): JSX.Element => {
       />
 
       {/* Texte principal */}
-      <div className="absolute top-[180px] left-[132px] z-10 w-[700px] text-white leftMobile containerMobile">
-        <h1 className="text-6xl font-bold leading-[64px] font-['Playfair_Display'] titleMobile">
+      <div className="absolute top-20 md:top-[180px] left-8 md:left-[132px] z-10 w-[90%] md:w-[700px] text-white">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight md:leading-[64px] font-['Playfair_Display']">
           {slide.title}
         </h1>
         <p className="mt-8 text-lg font-medium font-['Inter'] leading-7">
@@ -93,7 +93,7 @@ export const ImageSliderSection = (): JSX.Element => {
       </div>
 
       {/* Navigation */}
-      <div className="absolute bottom-[120px] right-[132px] z-10 flex items-center gap-4 btnNav bottom15 leftMobile">
+      <div className="absolute bottom-20 md:bottom-[120px] right-8 md:right-[132px] z-10 flex items-center gap-4">
         <button
           onClick={prevSlide}
           className="w-[82px] h-[45px] bg-white rounded-full flex items-center justify-center align-center"
@@ -118,7 +118,7 @@ export const ImageSliderSection = (): JSX.Element => {
       </div>
 
       {/* Séparateur + blocs fixes */}
-      <div className="absolute bottom-[100px] left-[132px] right-[132px] z-10">
+      <div className="absolute bottom-4 md:bottom-[100px] left-4 right-4 md:left-[132px] md:right-[132px] z-10">
         <div className="h-px bg-white/30 w-full mb-8 cacheMobile" />
 
         <div className="flex justify-between text-white gap-4 cacheMobile">
