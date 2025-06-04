@@ -59,7 +59,7 @@ export const SectionContainer = (): JSX.Element => {
     <section className="relative w-full py-16">
       <div className="relative w-full">
         {/* Background gray area */}
-        <div className="absolute w-full h-[797px] bottom-0 bg-[#f3f3f3] grayBackground" />
+        <div className="absolute w-full bottom-0 bg-[#f3f3f3] grayBackground h-[600px] md:h-[797px]" />
 
         {/* Section header */}
         <div className="flex flex-col items-center justify-center text-center mb-12">
@@ -77,8 +77,9 @@ export const SectionContainer = (): JSX.Element => {
             {categories.map((category) => (
               <Card
                 key={category.id}
-                className={`relative overflow-hidden rounded-none border-none shadow-none 
-                  ${category.isWide ? "w-[816px] large" : "w-[390px]"}
+                className={`relative overflow-hidden rounded-none border-none shadow-none
+                  w-full
+                  ${category.isWide ? "md:w-[816px] large" : "md:w-[390px]"}
                   ${category.isSmallClass ? "small" : ""}
                   h-[404px]`}
                 style={{
@@ -90,11 +91,12 @@ export const SectionContainer = (): JSX.Element => {
               >
                 <CardContent className="p-0">
                   <div
-                    className={`inline-flex flex-col items-start justify-center gap-[5px] absolute item ${
-                      category.isWide
-                        ? "bottom-[95px] left-[47px]"
-                        : "bottom-[134px] left-[35px]"
-                    }`}
+                    className={`inline-flex flex-col items-start justify-center gap-[5px] absolute item
+                      bottom-20 left-4
+                      ${category.isWide
+                        ? "md:bottom-[95px] md:left-[47px]"
+                        : "md:bottom-[134px] md:left-[35px]"}
+                    `}
                   >
                     <div className="relative w-fit [font-family:'Playfair_Display',Helvetica] font-medium text-white text-[37px] tracking-[0] leading-[normal]">
                       {category.hasTwoLines ? (

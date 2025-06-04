@@ -1,6 +1,6 @@
 .containerImg{
-      width: 100vw;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 
 .grid{
@@ -38,10 +38,7 @@
 
 /* Pour visualiser */
 .item {
-  width: 200px;
-  height: 200px;
   border-radius: 20px;
-  top: 5em;
 }
 
 .grayBackground{
