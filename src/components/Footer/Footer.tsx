@@ -1,14 +1,8 @@
-import { FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 import React from "react";
+import { Link } from "react-router-dom";
+import { FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 import { Button } from "../ui/button";
-
-// Navigation links data
-const navLinks = [
-  { title: "Services", href: "#" },
-  { title: "Société", href: "#" },
-  { title: "Partenaires", href: "#" },
-  { title: "Contact", href: "#" },
-];
+import { navLinks } from "../../constants/navigation";
 
 // Social media links data
 const socialLinks = [
@@ -32,14 +26,14 @@ export const Footer = (): JSX.Element => {
 
           <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
             <nav className="flex flex-wrap gap-8">
-              {navLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
                   className="font-medium text-[#243d38] text-base"
                 >
                   {link.title}
-                </a>
+                </Link>
               ))}
             </nav>
 
