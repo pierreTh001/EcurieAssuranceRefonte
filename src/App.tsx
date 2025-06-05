@@ -3,6 +3,10 @@ import { HomepageEcurie } from "./screens/HomepageEcurie/HomepageEcurie";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import ServicesPage from "./screens/Services/ServicesPage";
+import InscriptionPage from "./screens/Inscription/InscriptionPage";
+
+import './global.scss';
+import ContactPage from "./screens/Contact/ContactPage";
 
 export const App = () => {
   return (
@@ -12,6 +16,8 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<HomepageEcurie />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/signup" element={<InscriptionPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           {/* Tu pourras ajouter d'autres routes ici plus tard */}
         </Routes>
       </main>

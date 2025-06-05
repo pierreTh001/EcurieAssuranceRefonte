@@ -1,0 +1,44 @@
+.contact-info-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  background-color: #ffffff;
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex: 1 1 200px;
+    max-width: 300px;
+  }
+
+  .circle {
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    padding: 15px;
+  }
+
+  &__text {
+    strong {
+      color: #0d1b2a;
+      font-size: 1rem;
+    }
+
+    p {
+      margin: 4px 0 0;
+      font-size: 0.95rem;
+      color: #5c6470;
+    }
+  }
+}
