@@ -20,10 +20,25 @@ export const Header = (): JSX.Element => {
     setMobileOpen(false); // close menu on page change
   }, [location.pathname]);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    if (!isHome) return;
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHome]);
+
   return (
     <header
       className={`w-full top-0 z-50 transition-all duration-300 px-6 md:px-20 py-4 flex items-center justify-between headerNav ${
-        isHome ? "bg-transparent absolute" : "bg-[#233D38] fixed variantHeader"
+        isHome && !isScrolled
+          ? "bg-transparent absolute"
+          : "bg-[#233D38] fixed variantHeader"
       }`}
     >
       {/* Logo */}

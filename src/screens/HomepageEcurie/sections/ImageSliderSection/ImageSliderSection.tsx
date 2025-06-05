@@ -124,10 +124,10 @@ export const ImageSliderSection = (): JSX.Element => {
 
         <div className="flex justify-between text-white gap-4 cacheMobile">
           {bottomBlocks.map((block, index) => (
-            <div key={index} className="max-w-[300px] ">
+            <div key={index} className="max-w-[300px]">
               <h3 className="text-xl font-semibold italic">{block.title}</h3>
-              <h4 className="text-lg font-bold mt-2">{block.subtitle}</h4>
-              <p className="text-sm mt-2">{block.text}</p>
+              <h4 className="text-xl font-bold mt-2 ">{block.subtitle}</h4>
+              <p className="text-lg mt-2">{block.text}</p>
             </div>
           ))}
         </div>

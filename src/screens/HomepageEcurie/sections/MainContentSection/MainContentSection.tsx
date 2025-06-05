@@ -71,7 +71,7 @@ export const MainContentSection = (): JSX.Element => {
 
       <Carousel className="w-full">
         <div className="flex items-center gap-[17px] mt-6 buttonSliderOffre">
-          <CarouselPrevious className="relative w-[82px] h-[45px] bg-[#ffffff8a] rounded-[33px] border-2 border-solid border-[#243d38] flex items-center justify-center">
+          <CarouselPrevious className="relative w-[82px] h-[45px] bg-[#ffffff8a] rounded-[33px] border-2 border-solid border-[#243d38] flex items-center justify-center sliderArrowLeft">
             <img
               className="w-[34px] h-[34px]"
               alt="Arrow left"

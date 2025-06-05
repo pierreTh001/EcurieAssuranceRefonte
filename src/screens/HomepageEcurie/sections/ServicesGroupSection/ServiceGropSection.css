@@ -8,13 +8,15 @@
 }
 
 .bandeauFront{
-
+    gap: 8em;
 }
 
 .beandeauParent{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: baseline;
+    width: 102%;
+    left: -1%;
 }
 
 @media screen and (max-width: 768px) {
