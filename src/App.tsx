@@ -7,12 +7,14 @@ import InscriptionPage from "./screens/Inscription/InscriptionPage";
 
 import './global.scss';
 import ContactPage from "./screens/Contact/ContactPage";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 export const App = () => {
   return (
     <>
       <Header />
       <main className="min-h-screen">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomepageEcurie />} />
           <Route path="/services" element={<ServicesPage />} />

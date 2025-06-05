@@ -14,6 +14,16 @@ const ServicesPage = () => {
 
   const selectedService = services.find((s) => s.id === selectedServiceId) || null;
 
+const handleSelectService = (id: string) => {
+  setSelectedServiceId(id);
+
+  // Scroll en haut en douceur
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
+
   return (
     <main className='mainPage'>
       {selectedService ? (
@@ -22,7 +32,7 @@ const ServicesPage = () => {
         <InsuranceBanner />
       )}
 
-      <ServicesSection onSelectService={setSelectedServiceId} />
+      <ServicesSection onSelectService={handleSelectService} />
       <QuoteBanner />
     </main>
   );
