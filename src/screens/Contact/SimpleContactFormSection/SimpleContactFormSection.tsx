@@ -14,7 +14,7 @@ const SimpleContactFormSection = () => {
         <h2>Merci de remplir ces informations pour<br />nous laisser un message</h2>
 
         <form>
-          <div className="form-grid">
+          <div className="form-grid formMobile">
             <input type="text" placeholder="Nom*" required />
             <input type="text" placeholder="Prénom*" required />
             <input type="email" placeholder="E-mail*" required />
