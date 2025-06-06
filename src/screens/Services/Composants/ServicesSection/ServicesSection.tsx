@@ -8,6 +8,7 @@ const categories = [
   'Gros œuvre',
   'Second œuvre',
   'Spécialisé',
+  'Nouveauté'
 ];
 
 // const services = [
@@ -75,6 +76,12 @@ const filteredServices = services.filter((service) => {
   return matchSearch && matchCategory;
 });
 
+const sortedServices = filteredServices.sort((a, b) => {
+  const aIsNew = a.categories?.includes('Nouveauté') ? 1 : 0;
+  const bIsNew = b.categories?.includes('Nouveauté') ? 1 : 0;
+  return bIsNew - aIsNew; // Nouveauté en premier
+});
+
   return (
     <section className="services-section">
       <div className="services-section__search">
@@ -101,13 +108,20 @@ const filteredServices = services.filter((service) => {
 
       <div className="services-section__cards">
         
-        {filteredServices.length > 0 ? (
-          filteredServices.map((service) => (
+        {sortedServices.length > 0 ? (
+          sortedServices.map((service) => (
             <div key={service.id} className="service-card">
-              <div className="icon iconCardService">
-                <span class="material-symbols-outlined">
-                  {service.icon}
-                </span>  
+              <div className="bandeauIconTag">
+                <div className="icon iconCardService">
+                  <span class="material-symbols-outlined">
+                    {service.icon}
+                  </span>
+                </div>
+                {service.categories.includes('Nouveauté') && (
+                  <div className="NewTag">
+                    <span>Nouveauté</span>
+                  </div>
+                )}
               </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>

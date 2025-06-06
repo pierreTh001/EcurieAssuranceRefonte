@@ -3,11 +3,15 @@ import { Button } from "../../../../components/ui/button";
 import './../../../../styles/mobiles.scss';
 import './ImageSliderSection.scss';
 
+import slider1 from '../../../../../public/img/slider/1.jpg';
+import slider2 from '../../../../../public/img/slider/2.jpg';
+import slider3 from '../../../../../public/img/slider/3.jpg';
+
 const slides = [
   {
     id: 1,
     background: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-2.png",
-    overlay: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-3.svg",
+    overlay: slider1,
     title: "Vous êtes agent général",
     subtitle:
       "Vous recherchez un Fournisseur d’assurance responsabilité civile décennale pour répondre aux besoins d’un client ?",
@@ -15,14 +19,14 @@ const slides = [
   {
     id: 2,
     background: "https://picsum.photos/id/1015/1600/900",
-    overlay: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-3.svg",
+    overlay: slider2,
     title: "Votre avenir en sécurité",
     subtitle: "Des solutions d’assurance fiables et adaptées à vos besoins.",
   },
   {
     id: 3,
     background: "https://picsum.photos/id/1021/1600/900",
-    overlay: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-3.svg",
+    overlay: slider3,
     title: "Rejoignez notre réseau",
     subtitle:
       "Devenez partenaire et bénéficiez de notre expertise reconnue dans l’assurance pro.",

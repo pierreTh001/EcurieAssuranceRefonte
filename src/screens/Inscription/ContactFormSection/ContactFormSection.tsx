@@ -1,11 +1,12 @@
 import React from 'react';
 import './ContactFormSection.scss';
 
+import photo from "../../../../public/img/signup-form.jpg";
 const ContactFormSection = () => {
   return (
     <section className="contact-form-section">
       <div className="form-image">
-        <img src="/public/img/signup-form.jpg" alt="Ordinateur sur un bureau" />
+        <img src={photo} alt="Ordinateur sur un bureau" />
       </div>
 
       <div className="form-content">

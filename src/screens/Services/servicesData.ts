@@ -54,7 +54,7 @@ export const services: Service[] = [
     ],
     price: 'À partir de 650€',
     coverageAmount: 'Selon les travaux déclarés',
-    categories: ['Gros œuvre']
+    categories: ['Gros œuvre', 'Nouveauté']
   },
   {
     id: 'maison-bois',
@@ -98,7 +98,7 @@ export const services: Service[] = [
     ],
     price: 'À partir de 520€/an',
     coverageAmount: 'Jusqu\'à 900 000€',
-    categories: ['Spécialisé']
+    categories: ['Spécialisé', 'Nouveauté']
   },
   {
     id: 'profils-difficiles',
