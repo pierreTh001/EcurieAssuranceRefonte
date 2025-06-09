@@ -8,14 +8,20 @@
 }
 
 .bandeauFront{
-
+    width: 100%;
+left: 0;
+display: flex;
+justify-content: space-evenly;
 }
 
 .beandeauParent{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: baseline;
+    width: 102%;
+    left: -1%;
 }
+
 
 @media screen and (max-width: 768px) {
     .bandeauLien {

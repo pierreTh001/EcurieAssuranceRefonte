@@ -1,0 +1,14 @@
+.mainPage {
+    margin-top: 8em;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .formMobile{
+      display: flex !important;
+      flex-direction: column;
+    }
+  }

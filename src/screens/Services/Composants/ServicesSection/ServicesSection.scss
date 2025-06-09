@@ -73,6 +73,7 @@ text-align: center;
   display: flex;
   flex-direction: column;
   height: 100%;
+  max-width: 590px;
 
   .icon {
     font-size: 2rem;
@@ -137,4 +138,18 @@ text-align: center;
       background-color: #00cba7;
     }
   }
+}
+
+.bandeauIconTag{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.NewTag{
+  background-color: #00e4be;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
 }

@@ -4,6 +4,7 @@ import { Card, CardContent } from "../../../../components/ui/card";
 
 import './SectionContainer.css';
 import './../../../../styles/mobiles.scss'
+import ButtonComponent from "../../../../components/Shared/Button/ButtonComponent";
 
 // Define the category data for mapping
 const categories = [
@@ -121,17 +122,10 @@ export const SectionContainer = (): JSX.Element => {
           {/* CTA Button */}
 
         </div>
-                  <div className="flex justify-center mt-12 buttonOffre">
-            <Button className="bg-[#2ef3c5] text-[#141841] hover:bg-[#2ef3c5]/90 rounded-[38px] px-[38px] py-3.5 border-2 border-solid button">
-              <span className="[font-family:'Inter',Helvetica] font-medium text-base">
-                Voir toutes nos offres
-              </span>
-              <img
-                className="ml-2 w-[17px] h-[17px]"
-                alt="Arrow right round"
-                src="https://c.animaapp.com/mbaid26t16qu9T/img/arrow-right-02-round-4.svg"
-              />
-            </Button>
+          <div className="flex justify-center mt-12 buttonOffre">
+            <div className="button">
+              <ButtonComponent texte="Voir toutes nos offres" lien="/services" variant="filled" />
+            </div>
           </div>
       </div>
     </section>

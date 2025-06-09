@@ -3,11 +3,16 @@ import { Button } from "../../../../components/ui/button";
 import './../../../../styles/mobiles.scss';
 import './ImageSliderSection.scss';
 
+import slider1 from '../../../../../public/img/slider/1.jpg';
+import slider2 from '../../../../../public/img/slider/2.jpg';
+import slider3 from '../../../../../public/img/slider/3.jpg';
+import ButtonComponent from "../../../../components/Shared/Button/ButtonComponent";
+
 const slides = [
   {
     id: 1,
     background: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-2.png",
-    overlay: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-3.svg",
+    overlay: slider1,
     title: "Vous êtes agent général",
     subtitle:
       "Vous recherchez un Fournisseur d’assurance responsabilité civile décennale pour répondre aux besoins d’un client ?",
@@ -15,14 +20,14 @@ const slides = [
   {
     id: 2,
     background: "https://picsum.photos/id/1015/1600/900",
-    overlay: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-3.svg",
+    overlay: slider2,
     title: "Votre avenir en sécurité",
     subtitle: "Des solutions d’assurance fiables et adaptées à vos besoins.",
   },
   {
     id: 3,
     background: "https://picsum.photos/id/1021/1600/900",
-    overlay: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-3.svg",
+    overlay: slider3,
     title: "Rejoignez notre réseau",
     subtitle:
       "Devenez partenaire et bénéficiez de notre expertise reconnue dans l’assurance pro.",
@@ -82,15 +87,10 @@ export const ImageSliderSection = (): JSX.Element => {
         <p className="mt-8 text-lg font-medium font-['Inter'] leading-7">
           {slide.subtitle}
         </p>
+        <div className="mt-12">
+          <ButtonComponent texte="Inscription" lien="/signup" variant="filled" />
+        </div>
 
-        <Button className="mt-12 bg-[#2ef3c5] text-[#141841] font-medium text-base rounded-[38px] px-[38px] py-3.5 border-2 border-solid hover:bg-[#2ef3c5]/90 flex items-center gap-2 btnGreen">
-          Inscription
-          <img
-            src="https://c.animaapp.com/mbaid26t16qu9T/img/arrow-right-02-round-4.svg"
-            alt="arrow"
-            className="w-[17px] h-[17px]"
-          />
-        </Button>
       </div>
 
       {/* Navigation */}
@@ -124,10 +124,10 @@ export const ImageSliderSection = (): JSX.Element => {
 
         <div className="flex justify-between text-white gap-4 cacheMobile">
           {bottomBlocks.map((block, index) => (
-            <div key={index} className="max-w-[300px] ">
+            <div key={index} className="max-w-[300px]">
               <h3 className="text-xl font-semibold italic">{block.title}</h3>
-              <h4 className="text-lg font-bold mt-2">{block.subtitle}</h4>
-              <p className="text-sm mt-2">{block.text}</p>
+              <h4 className="text-xl font-bold mt-2 ">{block.subtitle}</h4>
+              <p className="text-lg mt-2">{block.text}</p>
             </div>
           ))}
         </div>

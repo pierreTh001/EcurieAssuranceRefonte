@@ -1,0 +1,56 @@
+.quote-banner {
+  background-color: #1f3d37;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+
+    button {
+      padding: 14px 24px;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-outline {
+      background: white;
+      color: #1f3d37;
+      border: none;
+
+      &:hover {
+        background: #f0f0f0;
+      }
+    }
+
+    .btn-solid {
+      background: #00e4be;
+      color: #1f3d37;
+      border: none;
+
+      &:hover {
+        background: #00cba7;
+      }
+    }
+  }
+}
