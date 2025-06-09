@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.ecurie-assurance.fr/sitemap.xml

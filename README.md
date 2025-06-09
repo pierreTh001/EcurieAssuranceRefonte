@@ -29,3 +29,12 @@ If you are satisfied with the result, you can finally build the project for rele
 ```
 npm run build
 ```
+
+## SEO
+
+Le projet inclut quelques optimisations pour le référencement naturel :
+
+- Des méta balises (titre, description, Open Graph) sont définies dans `index.html`.
+- Un fichier `robots.txt` et un `sitemap.xml` sont disponibles dans le dossier `public` afin de faciliter l'exploration du site par les moteurs de recherche.
+
+Pensez à mettre à jour ces éléments si de nouvelles pages sont ajoutées.
