@@ -8,8 +8,17 @@ export interface ButtonProps {
 }
 
 export default function ButtonComponent({ texte, lien, variant = 'outlined' }: ButtonProps) {
-  return (
-    <Link to={lien} className={`btn ${variant}`}>
+  const isExternal = lien.startsWith('http');
+
+  const classNames = `btn ${variant}`;
+
+  return isExternal ? (
+    <a href={lien} className={classNames} target="_blank" rel="noopener noreferrer">
+      <span>{texte}</span>
+      {variant === 'filled' && <span className="arrow">→</span>}
+    </a>
+  ) : (
+    <Link to={lien} className={classNames}>
       <span>{texte}</span>
       {variant === 'filled' && <span className="arrow">→</span>}
     </Link>

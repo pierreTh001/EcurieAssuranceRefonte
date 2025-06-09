@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import { navLinks } from "../../constants/navigation";
+import ButtonComponent from "../Shared/Button/ButtonComponent";
 
 // Social media links data
 const socialLinks = [
@@ -36,13 +37,14 @@ export const Footer = (): JSX.Element => {
                 </Link>
               ))}
             </nav>
+        <ButtonComponent texte="Inscription" lien="/signup" variant="outlined black" />
 
-            <Button
+            {/* <Button
               variant="outline"
               className="rounded-full border-2 border-[#243d38] text-[#243d38] px-9 py-3.5 font-medium"
             >
               Inscription
-            </Button>
+            </Button> */}
           </div>
         </div>
 

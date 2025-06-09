@@ -23,7 +23,7 @@ const DualCTASection = () => {
           Découvrez notre programme de partenariat et rejoignez notre réseau de professionnels.
           Ensemble, offrons les meilleures solutions d'assurance à nos clients.
         </p>
-        <button onClick={() => navigate('/inscription')}>Devenir partenaire →</button>
+        <button onClick={() => navigate('/signup')}>Devenir partenaire →</button>
       </div>
     </section>
   );

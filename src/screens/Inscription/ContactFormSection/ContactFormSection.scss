@@ -83,3 +83,40 @@
     }
   }
 }
+
+.form-grid input.error,
+.form-grid select.error {
+  border-color: #e74c3c;
+  background-color: #fff5f5;
+}
+
+.form-grid .error {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.success-message {
+  color: #2ecc71;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.form-grid {
+  & .divSelect {
+    & select {
+    width: 100%;
+    }
+  }
+  & input {
+    width: 100%;
+  }
+}

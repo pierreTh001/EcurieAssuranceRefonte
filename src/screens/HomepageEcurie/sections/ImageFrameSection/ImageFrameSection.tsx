@@ -1,6 +1,7 @@
 import { ArrowRightIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../../../components/ui/button";
+import ButtonComponent from "../../../../components/Shared/Button/ButtonComponent";
 
 export const ImageFrameSection = (): JSX.Element => {
   return (
@@ -22,11 +23,7 @@ export const ImageFrameSection = (): JSX.Element => {
             <br />
             activité professionnelle ?
           </h2>
-
-          <Button className="bg-[#2ef3c5] hover:bg-[#2ef3c5]/90 text-[#141841] font-medium rounded-[38px] px-[38px] py-3.5 border-2 border-solid btnGreen">
-            <span className="font-['Inter',Helvetica]">Contactez-nous</span>
-            <ArrowRightIcon className="ml-2 h-[17px] w-[17px]" />
-          </Button>
+          <ButtonComponent texte="Contactez-nous" lien="/contact" variant="filled" />
         </div>
       </div>
     </section>

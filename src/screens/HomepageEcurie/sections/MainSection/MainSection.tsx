@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 import './MainSection.css';
+import ButtonComponent from "../../../../components/Shared/Button/ButtonComponent";
 
 // Define the feature data for mapping
 const features = [
@@ -35,8 +36,9 @@ export const MainSection = (): JSX.Element => {
               Vous êtes agent général ?
             </h2>
           </div>
+          <ButtonComponent texte="Devis en ligne" lien="/signup" variant="filled" />
 
-          <Button className="bg-[#2ef3c5] text-[#141841] rounded-[38px] border-2 border-solid px-[38px] py-3.5 hover:bg-[#2ef3c5]/90 flex items-center gap-2">
+          {/* <Button className="bg-[#2ef3c5] text-[#141841] rounded-[38px] border-2 border-solid px-[38px] py-3.5 hover:bg-[#2ef3c5]/90 flex items-center gap-2">
             <span className="font-['Inter',Helvetica] font-medium text-base">
               Devis en ligne
             </span>
@@ -45,7 +47,7 @@ export const MainSection = (): JSX.Element => {
               alt="Arrow right round"
               src="https://c.animaapp.com/mbaid26t16qu9T/img/arrow-right-02-round-4.svg"
             />
-          </Button>
+          </Button> */}
         </div>
 
         {/* Main content with image and features */}

@@ -6,6 +6,7 @@ import './ImageSliderSection.scss';
 import slider1 from '../../../../../public/img/slider/1.jpg';
 import slider2 from '../../../../../public/img/slider/2.jpg';
 import slider3 from '../../../../../public/img/slider/3.jpg';
+import ButtonComponent from "../../../../components/Shared/Button/ButtonComponent";
 
 const slides = [
   {
@@ -86,15 +87,10 @@ export const ImageSliderSection = (): JSX.Element => {
         <p className="mt-8 text-lg font-medium font-['Inter'] leading-7">
           {slide.subtitle}
         </p>
+        <div className="mt-12">
+          <ButtonComponent texte="Inscription" lien="/signup" variant="filled" />
+        </div>
 
-        <Button className="mt-12 bg-[#2ef3c5] text-[#141841] font-medium text-base rounded-[38px] px-[38px] py-3.5 border-2 border-solid hover:bg-[#2ef3c5]/90 flex items-center gap-2 btnGreen">
-          Inscription
-          <img
-            src="https://c.animaapp.com/mbaid26t16qu9T/img/arrow-right-02-round-4.svg"
-            alt="arrow"
-            className="w-[17px] h-[17px]"
-          />
-        </Button>
       </div>
 
       {/* Navigation */}
