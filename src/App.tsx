@@ -8,6 +8,7 @@ import InscriptionPage from "./screens/Inscription/InscriptionPage";
 import './global.scss';
 import ContactPage from "./screens/Contact/ContactPage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import ArticlePage from "./screens/Articles/ArticlePage";
 
 export const App = () => {
   return (
@@ -20,6 +21,7 @@ export const App = () => {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/signup" element={<InscriptionPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/article/:id" element={<ArticlePage />} />
           {/* Tu pourras ajouter d'autres routes ici plus tard */}
         </Routes>
       </main>

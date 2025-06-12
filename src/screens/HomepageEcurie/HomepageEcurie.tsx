@@ -9,6 +9,8 @@ import { ServicesGroupSection } from "./sections/ServicesGroupSection";
 
 import './HomepageEcurie.css';
 import './../../styles/mobiles.scss'
+import BctSolutionBanner from "./sections/BctSolutionBanner/BctSolutionBanner";
+import PressSection from "./sections/PressSection/PressSection";
 
 export const HomepageEcurie = (): JSX.Element => {
   // Navigation menu items data
@@ -31,7 +33,9 @@ export const HomepageEcurie = (): JSX.Element => {
         
           <MainContentSection />
           <MainSection />
+          <BctSolutionBanner />
           <SectionContainer />
+          <PressSection />
           <ImageFrameSection />
       </div>
     </div>

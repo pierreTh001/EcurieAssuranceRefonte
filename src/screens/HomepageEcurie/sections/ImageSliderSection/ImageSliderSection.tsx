@@ -37,18 +37,18 @@ const slides = [
 const bottomBlocks = [
   {
     title: "01",
-    subtitle: "Lorem Ipsum",
-    text: "Lorem ipsum dolor sit amet consectetur. Eu tincidunt vulputate nibh eleifend leo.",
+    subtitle: "Identifier les clients non assurables",
+    text: "Nous intervenons dès qu'un client est résilié ou en voie de résiliation, sans soulition d'assurance possible via un parcours 100% digitalisé.",
   },
   {
     title: "02",
-    subtitle: "Dolor Sit Amet",
-    text: "Lorem ipsum dolor sit amet consectetur. Arcu volutpat risus proin justo sit.",
+    subtitle: "Prise en charge et solution adaptée",
+    text: "Nous trouvons une solution pour votre clientvia nos meilleurs partenaires. En l'absence d'alternative immédiate, nous accompagnons votre dossier jusqu'au Bureau Contral de Tarification (BCT)",
   },
   {
     title: "03",
-    subtitle: "Consectetur",
-    text: "Lorem ipsum dolor sit amet consectetur. Mi massa nibh ante facilisis varius duis.",
+    subtitle: "Fidélisation et réintégration",
+    text: "A l'issue de 12 à 36 mois, le client revient dans votre portefeuille dès l'accord de votre compagnie.",
   },
 ];
 
@@ -124,7 +124,7 @@ export const ImageSliderSection = (): JSX.Element => {
 
         <div className="flex justify-between text-white gap-4 cacheMobile">
           {bottomBlocks.map((block, index) => (
-            <div key={index} className="max-w-[300px]">
+            <div key={index}>
               <h3 className="text-xl font-semibold italic">{block.title}</h3>
               <h4 className="text-xl font-bold mt-2 ">{block.subtitle}</h4>
               <p className="text-lg mt-2">{block.text}</p>
