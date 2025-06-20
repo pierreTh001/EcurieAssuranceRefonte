@@ -76,7 +76,9 @@ export const ImageSliderSection = (): JSX.Element => {
       {/* Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: `url('${slide.overlay}')` }}
+        style={{ backgroundImage: `url('${slide.overlay}')`,
+          boxShadow: '400px 400px 400px rgba(3, 3, 74, 0.3) inset'
+ }}
       />
 
       {/* Texte principal */}
@@ -88,7 +90,7 @@ export const ImageSliderSection = (): JSX.Element => {
           {slide.subtitle}
         </p>
         <div className="mt-12">
-          <ButtonComponent texte="Inscription" lien="/signup" variant="filled" />
+          <ButtonComponent texte="Je m'inscris" lien="/signup" variant="filled" />
         </div>
 
       </div>

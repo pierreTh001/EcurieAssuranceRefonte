@@ -5,7 +5,7 @@ const contactItems = [
   {
     id: 1,
     title: 'Adresse',
-    content: '123 Avenue des Assurances, 75001 Paris',
+    content: '128 rue de la Boétie, immeuble D, 75008 Paris',
   },
   {
     id: 2,
@@ -15,12 +15,13 @@ const contactItems = [
   {
     id: 3,
     title: 'Appelez-nous au',
-    content: '+33 1 23 45 67 89',
+    content: '+33 1 80 81 44 95',
   },
   {
     id: 4,
     title: "Heures d'ouverture",
-    content: '9h00 - 18h00 du lundi au vendredi',
+    content: '10h00 - 18h00 du lundi au vendredi',
+    contentLine2: '10h - 12h30 Samedi',
   },
 ];
 
@@ -33,6 +34,7 @@ const ContactInfoBanner = () => {
           <div className="contact-info-banner__text">
             <strong>{item.title}</strong>
             <p>{item.content}</p>
+            <p>{item.contentLine2}</p>
           </div>
         </div>
       ))}

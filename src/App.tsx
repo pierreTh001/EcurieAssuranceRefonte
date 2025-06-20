@@ -9,6 +9,8 @@ import './global.scss';
 import ContactPage from "./screens/Contact/ContactPage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import ArticlePage from "./screens/Articles/ArticlePage";
+import QuiSommesNousPage from "./screens/QuiSommesNousPage/QuiSommesNousPage";
+import AvantagesScreen from "./screens/Avantages/AvantagesScreen";
 
 export const App = () => {
   return (
@@ -22,6 +24,8 @@ export const App = () => {
           <Route path="/signup" element={<InscriptionPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/article/:id" element={<ArticlePage />} />
+          <Route path="/societe" element={<QuiSommesNousPage />} />
+          <Route path="/avantages" element={<AvantagesScreen />} />
           {/* Tu pourras ajouter d'autres routes ici plus tard */}
         </Routes>
       </main>

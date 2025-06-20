@@ -17,7 +17,7 @@ const PressSection: React.FC = () => {
     .slice(0, 3);
 
   return (
-    <section className="press">
+    <section className="press mw80">
       <h2 className="press__title">On parle de nous</h2>
       <div className="press__grid">
         {last3.map((art) => (
