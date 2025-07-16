@@ -6,7 +6,8 @@ export interface NavItem {
 export const navLinks: NavItem[] = [
   { title: 'Accueil', path: '/' },
   { title: 'Services', path: '/services' },
-  // { title: 'Société', path: '/societe' },
+  { title: 'Avantages', path: '/avantages' },
+  { title: 'Qui sommes-nous ?', path: '/societe' },
   // { title: 'Partenaires', path: '/partenaires' },
   { title: 'Contact', path: '/contact' },
 ];

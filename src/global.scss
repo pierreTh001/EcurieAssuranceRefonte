@@ -1,9 +1,61 @@
-.mainPage {
-    margin-top: 8em;
+@font-face {
+  font-family: "Inter";
+  src: url("/font/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/font/Inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/font/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
 }
 
 
 
+.mainPage {
+    margin-top: 8em !important;
+}
+
+
+.mw92{
+  max-width: 92%;
+}
+
+.w92{
+  width: 92%;
+}
+
+.w80{
+  width: 80%;
+}
 
 
 @media (max-width: 768px) {
@@ -12,3 +64,9 @@
       flex-direction: column;
     }
   }
+
+@media (max-width: 900px) {
+  .mw80{
+    width: 80vw;
+  }
+}

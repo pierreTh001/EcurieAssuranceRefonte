@@ -1,0 +1,33 @@
+.avantages-section {
+  padding: 48px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1c2b27;
+  }
+
+  .intro {
+    font-size: 16px;
+    color: #4a4a4a;
+    max-width: 700px;
+    margin: 0 auto 40px;
+  }
+
+  .grid {
+    display: grid;
+    width: 80%; // Les cards occupent 80% de la largeur visible
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

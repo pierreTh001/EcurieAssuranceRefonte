@@ -1,0 +1,73 @@
+.apropos {
+  background: #f8f9f9;
+  padding: 4vw 2vw;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+
+    @media (max-width: 900px) {
+      flex-direction: column-reverse;
+      gap: 2.5vw;
+    }
+  }
+
+  /* TEXTE */
+  &__text {
+    flex: 1;
+  }
+
+  &__title {
+    font-family: "Merriweather", serif;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    color: #1b2f2b;
+    line-height: 1.1;
+    margin: 0 0 1.5em 0;
+  }
+
+  &__paragraph {
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    color: #26403b;
+    line-height: 1.6;
+    margin-bottom: 1.3em;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.9em 2.2em;
+    background: #1b2f2b;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.2s;
+
+    &:hover,
+    &:focus {
+      background: #16322c;
+    }
+  }
+
+  /* IMAGE */
+  &__image {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(25, 56, 46, 0.1);
+
+    img {
+      height: 40vh;
+      display: block;
+      object-fit: cover;
+
+    @media (max-width: 900px) {
+      width: 80vw;
+    }
+    }
+  }
+}

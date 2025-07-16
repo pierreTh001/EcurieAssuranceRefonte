@@ -49,7 +49,7 @@ export const Header = (): JSX.Element => {
       {/* Desktop nav */}
       <div className="hidden md:flex items-center gap-10">
         <NavLinks items={navLinks} className="" />
-        <ButtonComponent texte="Inscription" lien="/signup" variant="outlined" />
+        <ButtonComponent texte="M'inscrire" lien="/signup" variant="outlined" />
         <ButtonComponent texte="Espace pro" lien="https://clientspace.ecurie-assurance.fr/connexion-espace-partenaire" variant="filled" />
       </div>
 
@@ -65,7 +65,7 @@ export const Header = (): JSX.Element => {
         }`}
       >
         <NavLinks items={navLinks} onNavigate={() => setMobileOpen(false)} className="text-white text-lg" />
-        <ButtonComponent texte="Inscription" lien="/signup" variant="outlined" />
+        <ButtonComponent texte="M'inscrire" lien="/signup" variant="outlined" />
         <ButtonComponent texte="Espace pro" lien="https://clientspace.ecurie-assurance.fr/connexion-espace-partenaire" variant="filled" />
       </div>
     </header>

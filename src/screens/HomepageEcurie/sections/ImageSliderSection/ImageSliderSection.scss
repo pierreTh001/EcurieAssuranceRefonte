@@ -7,8 +7,39 @@
         top: 12em;
     }
 
+@media screen and (max-width: 1550px) {
+    .buttonSection{
+        bottom: 21em;
+    }
 
-@media screen and (max-width: 768px) {
+    .SliderInfo{
+        top: 8em;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .buttonSection{
+        bottom: 22em;
+    }
+
+    .SliderInfo{
+        top: 8em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .buttonSection{
+        bottom: 24em;
+    }
+
+    .SliderInfo{
+        top: 8em;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
     .buttonSection{
         bottom: 2em;
     }
