@@ -51,7 +51,13 @@ export const Footer = (): JSX.Element => {
         <div className="mt-16 pt-6 border-t border-[#06222b42]">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="font-medium text-black text-base">
-              copyright@ Ecurie Assurance&nbsp;&nbsp;2025
+              copyright@ Ecurie Assurance&nbsp;&nbsp;2025 - <Link
+                  key='mentions-legales'
+                  to='mentions-legales'
+                  className="font-medium text-[#243d38] text-base"
+                >
+                  Mention légales
+                </Link>
             </p>
 
             <div className="flex items-center gap-7 mt-4 md:mt-0">

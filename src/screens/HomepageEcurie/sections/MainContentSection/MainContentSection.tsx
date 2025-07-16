@@ -16,6 +16,8 @@ export const MainContentSection = (): JSX.Element => {
       id: 1,
       title: "Gros / second\noeuvre",
       description: "Maçons et professionnels du bâtiment",
+       descriptionDetail:
+      "Le gros œuvre désigne les parties d'une construction qui en constituent l'ossature. Elles comprennent les éléments porteurs qui contribuent à la stabilité ou à la solidité du bâtiment.",
       image: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-8.png",
     },
     {
@@ -96,13 +98,14 @@ export const MainContentSection = (): JSX.Element => {
               <Card
                 className="w-full h-[380px] md:h-[452px] rounded-[20px] overflow-hidden border-none"
               >
-                <CardContent className="p-0 h-full relative">
+                <CardContent className="p-0 h-full relative group">
                   <div
-                    className="absolute inset-0 bg-cover bg-center"
+                    className="absolute inset-0 bg-cover bg-center z-0"
                     style={{ backgroundImage: `url(${offering.image})` }}
                   />
-                  <div className="absolute inset-0 rounded-[20px] bg-gradient-to-b from-transparent via-transparent to-[#112f38]" />
-                  <div className="absolute bottom-10 left-0 right-0 flex flex-col items-center gap-4 px-4">
+                  <div className="absolute inset-0 rounded-[20px] bg-gradient-to-b from-transparent via-transparent to-[#112f38] z-10" />
+
+                  <div className="absolute bottom-10 left-0 right-0 flex flex-col items-center gap-4 px-4 z-20 transition-all duration-300 group-hover:opacity-0">
                     <h3 className="font-playfair font-medium text-white text-2xl md:text-[37px] text-center whitespace-pre-line">
                       {offering.title}
                     </h3>
@@ -110,8 +113,19 @@ export const MainContentSection = (): JSX.Element => {
                       {offering.description}
                     </p>
                   </div>
+
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-[rgba(36,61,56,0.8)] text-white p-6 transform translate-y-full opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 z-30 flex flex-col justify-center items-center text-center">
+                    <h3 className="font-playfair font-medium text-white text-2xl md:text-[37px] whitespace-pre-line mb-4">
+                      {offering.title}
+                    </h3>
+                    <p className="font-inter text-sm leading-snug max-w-[90%]">
+                      {offering.descriptionDetail}
+                    </p>
+                  </div>
+
                 </CardContent>
-              </Card>
+                              </Card>
             </CarouselItem>
           ))}
         </CarouselContent>

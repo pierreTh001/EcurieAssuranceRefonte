@@ -11,6 +11,7 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import ArticlePage from "./screens/Articles/ArticlePage";
 import QuiSommesNousPage from "./screens/QuiSommesNousPage/QuiSommesNousPage";
 import AvantagesScreen from "./screens/Avantages/AvantagesScreen";
+import MentionLegale from "./screens/MentionLegale/MentionLegale";
 
 export const App = () => {
   return (
@@ -26,6 +27,7 @@ export const App = () => {
           <Route path="/article/:id" element={<ArticlePage />} />
           <Route path="/societe" element={<QuiSommesNousPage />} />
           <Route path="/avantages" element={<AvantagesScreen />} />
+          <Route path="/mentions-legales" element={<MentionLegale />} />
           {/* Tu pourras ajouter d'autres routes ici plus tard */}
         </Routes>
       </main>
