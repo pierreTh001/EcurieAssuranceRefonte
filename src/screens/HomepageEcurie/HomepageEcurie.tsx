@@ -11,6 +11,7 @@ import './HomepageEcurie.css';
 import './../../styles/mobiles.scss'
 import BctSolutionBanner from "./sections/BctSolutionBanner/BctSolutionBanner";
 import PressSection from "./sections/PressSection/PressSection";
+import SuccessRaceComponent from "./sections/SuccessRaceComponent/SuccessRaceComponent";
 
 export const HomepageEcurie = (): JSX.Element => {
   // Navigation menu items data
@@ -35,6 +36,7 @@ export const HomepageEcurie = (): JSX.Element => {
           <MainSection />
           <BctSolutionBanner />
           <SectionContainer />
+          <SuccessRaceComponent />
           <PressSection />
           <ImageFrameSection />
       </div>
