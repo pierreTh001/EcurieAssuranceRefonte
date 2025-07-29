@@ -10,14 +10,14 @@ const features = [
     icon: "https://c.animaapp.com/mbaid26t16qu9T/img/file---folder-download.svg",
     title: "Souscription rapide",
     description:
-      "Une souscription rapide (moins de 10 jours si tous les documents justificatifs sont fournis)",
+      "Une souscription rapide, proposition en 1 min sur l’extranet et édition des attestations dans les 24h à 48h",
     alt: "File folder download",
   },
   {
     icon: "https://c.animaapp.com/mbaid26t16qu9T/img/bed.svg",
     title: "Développer votre activité",
     description:
-      "La mise en place d'une relation gagnant-gagant en vous faisant profiter des conseils de nos experts techniques pour booster votre activité.",
+      "La mise en place d'une relation gagnant-gagnant en vous faisant profiter des conseils de nos experts techniques pour booster votre activité.",
     alt: "Bed",
   },
 ];
@@ -51,7 +51,7 @@ export const MainSection = (): JSX.Element => {
         </div>
 
         {/* Main content with image and features */}
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-[92px]">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-[92px] blocImgText colonneMobile">
           <div className="w-full lg:w-auto flex-shrink-0">
             <img
               className="w-full lg:w-[515px] h-auto lg:h-[541px] object-cover imageRadius"
@@ -79,7 +79,7 @@ export const MainSection = (): JSX.Element => {
                     {feature.description}
                   </p>
                   <div className="flex items-center gap-[9px] py-[13px]">
-                    <span className="font-['Inter',Helvetica] font-bold text-[#243d38] text-xl underline cursor-pointer">
+                    <span className="font-['Inter',Helvetica] ensavoirplus">
                       En savoir +
                     </span>
                     <img

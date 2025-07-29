@@ -24,3 +24,20 @@
 .button{
   z-index: 2;
 }
+
+.cardHoverDetail {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.group:hover .cardHoverDetail {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.overCard{
+  display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}

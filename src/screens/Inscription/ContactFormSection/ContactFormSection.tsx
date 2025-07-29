@@ -32,7 +32,11 @@ const initialErrors = {
   formejuridique: '',
 };
 
+
+
 const ContactFormSection = () => {
+
+const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState(initialFormData);
   const [fieldErrors, setFieldErrors] = useState(initialErrors);
   const [error, setError] = useState('');
@@ -91,26 +95,30 @@ const ContactFormSection = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError('');
-    setSuccess('');
+  e.preventDefault();
+  setError('');
+  setSuccess('');
+  setIsSubmitting(true); // désactive le bouton
 
-    if (!validate()) {
-      setError('Merci de corriger les erreurs dans le formulaire.');
-      return;
-    }
+  if (!validate()) {
+    setError('Merci de corriger les erreurs dans le formulaire.');
+    setIsSubmitting(false); // réactive le bouton si erreur
+    return;
+  }
 
-    try {
-      const urlEncodedData = new URLSearchParams(formData);
-      await saveRegistration(urlEncodedData);
-      setSuccess("Demande envoyée avec succès !");
-      setFormData(initialFormData);
-      setFieldErrors(initialErrors);
-    } catch (err) {
-      const message = err.response?.data?.error || "Erreur lors de l'envoi.";
-      setError(message);
-    }
-  };
+  try {
+    const urlEncodedData = new URLSearchParams(formData);
+    await saveRegistration(urlEncodedData);
+    setSuccess("Demande envoyée avec succès !");
+    setFormData(initialFormData);
+    setFieldErrors(initialErrors);
+  } catch (err) {
+    const message = err.response?.data?.error || "Erreur lors de l'envoi.";
+    setError(message);
+  } finally {
+    setIsSubmitting(false); // réactive le bouton après le traitement
+  }
+};
 
   return (
     <section className="contact-form-section">
@@ -209,9 +217,10 @@ const ContactFormSection = () => {
             </div>
           </div>
 
-          <button type="submit" className="submit-button">
-            Devenir partenaire →
+          <button type="submit" className="submit-button" disabled={isSubmitting}>
+            {isSubmitting ? 'Envoi en cours…' : 'Devenir partenaire →'}
           </button>
+
 
           {error && <p className="error-message">{error}</p>}
           {success && <p className="success-message">{success}</p>}

@@ -5,6 +5,11 @@
 
     .SliderInfo{
         top: 12em;
+        width: 60vw;
+    }
+
+    .mainSectionSlider{
+        height: 1000px;;
     }
 
 @media screen and (max-width: 1550px) {
@@ -19,21 +24,23 @@
 
 @media screen and (max-width: 1400px) {
     .buttonSection{
-        bottom: 22em;
-    }
-
-    .SliderInfo{
-        top: 8em;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .buttonSection{
         bottom: 24em;
     }
 
     .SliderInfo{
         top: 8em;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .buttonSection{
+        bottom: 26em;
+    }
+
+    .SliderInfo{
+        top: 8em;
+        width: 80vw;
     }
 }
 
@@ -46,5 +53,10 @@
 
     .SliderInfo{
         top: 8em;
+        width: 80vw;
+    }
+
+        .mainSectionSlider{
+        height: 100vh;
     }
 }

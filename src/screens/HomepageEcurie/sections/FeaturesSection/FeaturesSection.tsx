@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
 import './FeatureSection.css';
+import ButtonComponent from "../../../../components/Shared/Button/ButtonComponent";
 
 export const FeaturesSection = (): JSX.Element => {
   const features = [
@@ -43,6 +44,7 @@ export const FeaturesSection = (): JSX.Element => {
           </CardContent>
         </Card>
       ))}
+          <ButtonComponent texte="Voir tous les avantages" lien="/avantages" variant="filled" color="green" />
     </section>
   );
 };

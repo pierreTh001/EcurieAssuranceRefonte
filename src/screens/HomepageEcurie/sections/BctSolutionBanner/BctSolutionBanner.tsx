@@ -1,5 +1,6 @@
 import React from "react";
 import "./BctSolutionBanner.scss";
+import ButtonComponent from "../../../../components/Shared/Button/ButtonComponent";
 
 const BctSolutionBanner: React.FC = () => {
   return (
@@ -7,9 +8,9 @@ const BctSolutionBanner: React.FC = () => {
       <div className="bct-banner__content">
         <div className="bct-banner__left">
           <h2>
-            Professionnels Refusés<br />
-            Par Les Assureurs :<br />
-            <span>Le BCT Comme<br />Solution</span>
+            Professionnels refusés<br />
+            par les assureurs :<br />
+            <span>le BCT comme<br />solution</span>
           </h2>
         </div>
         <div className="bct-banner__right">
@@ -19,9 +20,11 @@ const BctSolutionBanner: React.FC = () => {
           <p>
             Nous accompagnons ces professionnels dans la constitution, le dépôt et le suivi de leur dossier auprès du BCT. Une solution efficace pour rester assuré, même en cas de refus répétés.
           </p>
-          <a href="#contact" className="bct-banner__cta">
-            Contactez-nous <span className="arrow">→</span>
-          </a>
+
+          <div className="BctButton">
+            <ButtonComponent texte="Je m'inscris" lien="/signup" variant="filled" />
+            <ButtonComponent texte="Contactez-nous" lien="/contact" variant="filled" />
+          </div>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .colonneMobile {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
   }
 
   .centreMobile {
@@ -57,5 +57,4 @@
     padding-top: 2em;
   }
 
-  // Ajoute ici tes autres classes responsive
 }
