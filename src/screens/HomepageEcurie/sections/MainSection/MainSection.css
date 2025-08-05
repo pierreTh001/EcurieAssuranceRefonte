@@ -2,3 +2,19 @@
 .DecouvrezSection{
     padding: 1em;
 }
+
+.ensavoirplus{
+    font-weight: 500;
+}
+
+.ensavoirplus:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.blocImgText{
+    display: flex;
+    flex-direction: revert;
+    justify-content: space-between;
+}

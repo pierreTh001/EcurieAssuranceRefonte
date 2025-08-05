@@ -13,24 +13,24 @@ const slides = [
     id: 1,
     background: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-2.png",
     overlay: slider1,
-    title: "Vous êtes agent général",
+    title: "Vous recherchez un partenaire pour gérer vos clients non assurables ?",
     subtitle:
-      "Vous recherchez un Fournisseur d’assurance responsabilité civile décennale pour répondre aux besoins d’un client ?",
+      "L’Écurie Assurance est la première solution digitale de mise en pension temporaire pour les clients à risque. Maintenez la relation, stabilisez votre portefeuille, assurez leur retour.",
   },
   {
     id: 2,
     background: "https://picsum.photos/id/1015/1600/900",
     overlay: slider2,
-    title: "Votre avenir en sécurité",
-    subtitle: "Des solutions d’assurance fiables et adaptées à vos besoins.",
+    title: "Les produits de votre mandante ne satisfont pas le besoin client ?",
+    subtitle: "Des refus de mandante ? Ne laissez pas vos clients sans solution. En quelques clics, le relais est assuré.",
   },
   {
     id: 3,
     background: "https://picsum.photos/id/1021/1600/900",
     overlay: slider3,
-    title: "Rejoignez notre réseau",
+    title: "Votre compagnie met fin à des contrats décennales ?",
     subtitle:
-      "Devenez partenaire et bénéficiez de notre expertise reconnue dans l’assurance pro.",
+      "Mettez en pension vos clients chez l’Ecurie Assurance lorsque sa période “Purgatoire” de référence sera terminée, vous pourrez reprendre le risque et ainsi stabiliser votre portefeuille",
   },
 ];
 
@@ -38,12 +38,12 @@ const bottomBlocks = [
   {
     title: "01",
     subtitle: "Identifier les clients non assurables",
-    text: "Nous intervenons dès qu'un client est résilié ou en voie de résiliation, sans soulition d'assurance possible via un parcours 100% digitalisé.",
+    text: "Nous intervenons dès qu'un client est résilié ou en voie de résiliation, sans solution d'assurance possible via un parcours 100% digitalisé.",
   },
   {
     title: "02",
     subtitle: "Prise en charge et solution adaptée",
-    text: "Nous trouvons une solution pour votre clientvia nos meilleurs partenaires. En l'absence d'alternative immédiate, nous accompagnons votre dossier jusqu'au Bureau Contral de Tarification (BCT)",
+    text: "Nous trouvons une solution pour votre client via nos meilleurs partenaires. En l'absence d'alternative immédiate, nous accompagnons votre dossier jusqu'au Bureau Central de Tarification (BCT)",
   },
   {
     title: "03",
@@ -65,7 +65,7 @@ export const ImageSliderSection = (): JSX.Element => {
   };
 
   return (
-    <section className="relative w-full h-[600px] md:h-[900px] overflow-hidden">
+    <section className="relative w-full h-[600px] md:h-[900px] overflow-hidden mainSectionSlider">
       {/* Image dynamique */}
       <div
         key={slide.id}

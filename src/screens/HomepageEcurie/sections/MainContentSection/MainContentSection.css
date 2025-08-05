@@ -6,7 +6,7 @@
 
 .sliderArrowLeft{
     position: relative;
-    left: 1em;
+    left: 3em;
 }
 
 @media screen and (max-width: 768px) {
@@ -25,4 +25,10 @@
 .group:hover .cardHoverDetail {
   transform: translateY(0%);
   opacity: 1;
+}
+
+.overCard{
+  display: flex;
+flex-direction: column;
+justify-content: space-evenly;
 }

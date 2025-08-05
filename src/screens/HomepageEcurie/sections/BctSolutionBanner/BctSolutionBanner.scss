@@ -29,7 +29,6 @@
       margin: 0;
 
       span {
-        font-size: clamp(2.2rem, 4vw, 3.6rem);
         display: block;
         font-weight: 500;
       }
@@ -82,6 +81,11 @@
   }
 }
 
+.BctButton{
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Responsiveness */
 @media (max-width: 650px) {
   .bct-banner {
@@ -104,4 +108,13 @@
       padding: 0.8em 1.5em;
     }
   }
+
+  .BctButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7em;
+  }
 }
+
+

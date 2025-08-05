@@ -6,52 +6,68 @@ import './SectionContainer.css';
 import './../../../../styles/mobiles.scss'
 import ButtonComponent from "../../../../components/Shared/Button/ButtonComponent";
 
+import jamais from '../../../../../public/img/categpop/jamais.jpg'
+import judiciaire from '../../../../../public/img/categpop/judiciaire.jpg'
+import oeuvre from '../../../../../public/img/categpop/oeuvre.jpg'
+import refus from '../../../../../public/img/categpop/refus.jpg'
+import resilie from '../../../../../public/img/categpop/resilie.jpg'
+
 // Define the category data for mapping
 const categories = [
   {
     id: 1,
     title: "Gros / Second oeuvre",
-    description: "Maçon et professionnels du bâtiment",
-    imageUrl: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-11.png",
+    description: "Professionnels du bâtiment",
+    imageUrl: oeuvre,
     isWide: false,
     hasTwoLines: true,
-    isSmallClass: true
+    isSmallClass: true,
+    descriptionDetail: "Le gros œuvre désigne les parties d'une construction qui en constituent l'ossature. Elles comprennent à la fois : Les éléments porteurs qui contribuent à la stabilité ou à la solidité du bâtiment et tous les autres éléments qui leur sont intégrés ou forment corps avec eux...",
+    link: 'services/gros-oeuvre'
   },
   {
     id: 2,
-    title: "Gros / Second oeuvre",
-    description: "Maçon et professionnels du bâtiment",
-    imageUrl: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-11-1.png",
+    title: "Jamais assuré",
+    description: "Professionnels du bâtiment",
+    imageUrl: jamais,
     isWide: true,
     hasTwoLines: false,
-    isSmallClass: false
+    isSmallClass: false,
+    descriptionDetail: "Le redressement judiciaire est une alternative proposée par la loi lorsqu'une entreprise, quelle que soit la nature de ses activités, est en cessation de paiement. Il est mis en place pour maintenir l'activité de l'entreprise.",
+    link: 'services/jamais-assure'
   },
   {
     id: 3,
-    title: "Gros / Second oeuvre",
-    description: "Maçon et professionnels du bâtiment",
-    imageUrl: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-11-2.png",
+    title: "Refus de compagnie",
+    description: "Professionnels du bâtiment",
+    imageUrl: refus,
     isWide: false,
     hasTwoLines: true,
-    isSmallClass: false
+    isSmallClass: false,
+    descriptionDetail: "Le redressement judiciaire est une alternative proposée par la loi lorsqu'une entreprise, quelle que soit la nature de ses activités, est en cessation de paiement. Il est mis en place pour maintenir l'activité de l'entreprise.",
+    link: 'services/refus-compagnie'
   },
   {
     id: 4,
-    title: "Gros / Second oeuvre",
-    description: "Maçon et professionnels du bâtiment",
-    imageUrl: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-11-3.png",
+    title: "Redressement judiciaire",
+    description: "Professionnels du bâtiment",
+    imageUrl: judiciaire,
     isWide: false,
     hasTwoLines: true,
-    isSmallClass: false
+    isSmallClass: false,
+    descriptionDetail: "Le redressement judiciaire est une alternative proposée par la loi lorsqu'une entreprise, quelle que soit la nature de ses activités, est en cessation de paiement. Il est mis en place pour maintenir l'activité de l'entreprise.",
+    link: 'services/edressement-judiciaire'
   },
   {
     id: 5,
-    title: "Gros / Second oeuvre",
-    description: "Maçon et professionnels du bâtiment",
-    imageUrl: "https://c.animaapp.com/mbaid26t16qu9T/img/rectangle-11-4.png",
+    title: "Résilié non-paiement",
+    description: "Professionnels du bâtiment",
+    imageUrl: resilie,
     isWide: false,
     hasTwoLines: true,
-    isSmallClass: false
+    isSmallClass: false,
+    descriptionDetail: "Le redressement judiciaire est une alternative proposée par la loi lorsqu'une entreprise, quelle que soit la nature de ses activités, est en cessation de paiement. Il est mis en place pour maintenir l'activité de l'entreprise.",
+    link: 'services/resilie-non-paiement'
   },
 ];
 
@@ -89,7 +105,7 @@ export const SectionContainer = (): JSX.Element => {
                   borderRadius: "20px"
                 }}
               >
-                <CardContent className="p-0">
+                <CardContent className="p-0 h-full relative group">
                   <div
                     className={`inline-flex flex-col items-start justify-center gap-[5px] absolute item
                       bottom-20 left-4
@@ -99,14 +115,7 @@ export const SectionContainer = (): JSX.Element => {
                     `}
                   >
                     <div className="relative w-fit [font-family:'Playfair_Display',Helvetica] font-medium text-white text-[37px] tracking-[0] leading-[normal]">
-                      {category.hasTwoLines ? (
-                        <>
-                          Gros / Second <br />
-                          oeuvre
-                        </>
-                      ) : (
-                        "Gros / Second oeuvre"
-                      )}
+                      {category.title}
                     </div>
                     <div className="inline-flex items-start gap-[7px]">
                       <div className="relative w-fit [font-family:'Inter',Helvetica] font-medium text-white text-lg tracking-[0] leading-[normal]">
@@ -114,6 +123,17 @@ export const SectionContainer = (): JSX.Element => {
                       </div>
                     </div>
                   </div>
+
+                   {/* Hover overlay */}
+                    <div className="absolute inset-0 bg-[rgba(36,61,56,0.8)] text-white p-6 transform translate-y-full opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 z-30 flex flex-col justify-center items-center text-center overCard">
+                      <h3 className="font-playfair font-medium text-white text-2xl md:text-[33px] whitespace-pre-line mb-4">
+                        {category.title}
+                      </h3>
+                      <p className="font-inter text-sm leading-snug max-w-[90%]">
+                        {category.descriptionDetail}
+                      </p>
+                      <ButtonComponent texte="Voir ce produit" lien={category.link} variant="filled" />
+                    </div>
                 </CardContent>
               </Card>
             ))}
